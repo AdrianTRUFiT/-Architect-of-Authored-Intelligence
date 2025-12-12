@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Architect of Authored Intelligence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-color: #0c0a09; /* stone-950 */
+        color: #e7e5e4; /* stone-200 */
+        font-family: 'Montserrat', sans-serif;
+        overflow-x: hidden;
+      }
+      h1, h2, h3, h4, .font-display {
+        font-family: 'Cinzel', serif;
+      }
+      .font-serif-text {
+        font-family: 'Cormorant Garamond', serif;
+      }
+      
+      /* Custom Animations */
+      @keyframes floatUp {
+        0% { transform: translateY(0) scale(1); opacity: 0.8; }
+        50% { opacity: 1; }
+        100% { transform: translateY(-100vh) scale(0.5); opacity: 0; }
+      }
+      
+      @keyframes drift {
+        0% { transform: translateX(0); }
+        50% { transform: translateX(20px); }
+        100% { transform: translateX(0); }
+      }
+
+      @keyframes pulse-glow {
+        0%, 100% { box-shadow: 0 0 10px 0px rgba(251, 191, 36, 0.1); }
+        50% { box-shadow: 0 0 20px 5px rgba(251, 191, 36, 0.3); }
+      }
+
+      .animate-float-ember {
+        animation: floatUp 10s linear infinite;
+      }
+      
+      .animate-drift {
+        animation: drift 20s ease-in-out infinite;
+      }
+
+      /* Hide scrollbar for clean aesthetic */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #1c1917; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #44403c; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #78716c; 
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.3.1",
+    "react/": "https://esm.sh/react@18.3.1/",
+    "lucide-react": "https://esm.sh/lucide-react@0.263.1",
+    "react-dom/": "https://esm.sh/react-dom@18.3.1/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
